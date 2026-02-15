@@ -6,7 +6,7 @@ This implementation plan breaks down the Movie Tracking App into incremental cod
 
 ## Tasks
 
-- [-] 1. Project setup and configuration
+- [x] 1. Project setup and configuration
   - Initialize Next.js project with TypeScript and App Router
   - Configure Tailwind CSS with custom color variables
   - Set up project directory structure (app/, components/, store/, theme/, data/, types/)
@@ -26,14 +26,14 @@ This implementation plan breaks down the Movie Tracking App into incremental cod
     - Use placeholder image URLs or public domain images
     - _Requirements: 1.1_
 
-- [ ] 3. Implement theme system
-  - [ ] 3.1 Create theme configuration in src/theme/theme.ts
+- [-] 3. Implement theme system
+  - [x] 3.1 Create theme configuration in src/theme/theme.ts
     - Define FunkyFlix theme palette (deep purple, neon pink, electric cyan)
     - Define SunsetPop theme palette (sunset orange, hot pink, purple)
     - Export themes object with both palettes
     - _Requirements: 10.2, 10.7, 11.2, 11.3, 11.4_
   
-  - [ ] 3.2 Create global CSS with variables in src/theme/globals.css
+  - [x] 3.2 Create global CSS with variables in src/theme/globals.css
     - Define :root CSS variables for all theme colors
     - Set default values to FunkyFlix palette
     - Add base styles with no black backgrounds
@@ -138,8 +138,8 @@ This implementation plan breaks down the Movie Tracking App into incremental cod
 - [ ] 5. Checkpoint - Ensure all tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 6. Build reusable UI components
-  - [ ] 6.1 Create MovieCard component in src/components/MovieCard.tsx
+- [x] 6. Build reusable UI components
+  - [x] 6.1 Create MovieCard component in src/components/MovieCard.tsx
     - Accept movie, showWatchedBadge, compact props
     - Display poster as background image with title/year overlay
     - Add watched toggle button and add-to-list button
@@ -152,14 +152,14 @@ This implementation plan breaks down the Movie Tracking App into incremental cod
     - **Property 1: Movie Card Rendering Completeness**
     - **Validates: Requirements 1.2, 7.1**
   
-  - [ ] 6.3 Create MovieGrid component in src/components/MovieGrid.tsx
+  - [x] 6.3 Create MovieGrid component in src/components/MovieGrid.tsx
     - Accept movies array and emptyMessage props
     - Render responsive grid (grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5)
     - Map movies to MovieCard components
     - Display emptyMessage when movies array is empty
     - _Requirements: 1.1, 1.3, 8.4_
   
-  - [ ] 6.4 Create AddToListModal component in src/components/AddToListModal.tsx
+  - [x] 6.4 Create AddToListModal component in src/components/AddToListModal.tsx
     - Accept movie, isOpen, onClose props
     - Display modal overlay with backdrop click to close
     - Show all predefined lists (Favorites, Classics, Watch Later) with checkboxes
@@ -180,7 +180,7 @@ This implementation plan breaks down the Movie Tracking App into incremental cod
     - Test create new list functionality
     - _Requirements: 6.4_
   
-  - [ ] 6.7 Create ListCard component in src/components/ListCard.tsx
+  - [x] 6.7 Create ListCard component in src/components/ListCard.tsx
     - Accept list, onRename, onDelete, onClick props
     - Display list name and movie count
     - Add rename button with inline edit functionality
@@ -231,8 +231,8 @@ This implementation plan breaks down the Movie Tracking App into incremental cod
     - Test that empty string returns all movies
     - _Requirements: 2.2_
 
-- [ ] 9. Build page components
-  - [ ] 9.1 Create root layout in src/app/layout.tsx
+- [x] 9. Build page components
+  - [x] 9.1 Create root layout in src/app/layout.tsx
     - Set up HTML structure with theme provider
     - Include SidebarNav component
     - Import global CSS
@@ -240,7 +240,7 @@ This implementation plan breaks down the Movie Tracking App into incremental cod
     - Apply background color from theme
     - _Requirements: 10.1, 11.1, 14.1_
   
-  - [ ] 9.2 Create home page in src/app/page.tsx
+  - [x] 9.2 Create home page in src/app/page.tsx
     - Add hero header with app title and tagline
     - Implement search bar with state management
     - Filter movies based on search query
@@ -254,7 +254,7 @@ This implementation plan breaks down the Movie Tracking App into incremental cod
     - Test movie grid is rendered
     - _Requirements: 1.1, 2.1_
   
-  - [ ] 9.4 Create movie details page in src/app/movie/[id]/page.tsx
+  - [x] 9.4 Create movie details page in src/app/movie/[id]/page.tsx
     - Extract movie ID from params
     - Fetch movie using getMovieById from store
     - Display backdrop image as hero
@@ -270,7 +270,7 @@ This implementation plan breaks down the Movie Tracking App into incremental cod
     - Test movie not found handling
     - _Requirements: 7.1, 7.2_
   
-  - [ ] 9.6 Create library page in src/app/library/page.tsx
+  - [x] 9.6 Create library page in src/app/library/page.tsx
     - Create sections for Watched Movies, Favorites, Classics, Watch Later
     - Fetch movies for each section from store
     - Render MovieGrid for each section with section headers
@@ -287,7 +287,7 @@ This implementation plan breaks down the Movie Tracking App into incremental cod
     - Test empty state handling
     - _Requirements: 8.1, 8.4_
   
-  - [ ] 9.9 Create lists page in src/app/lists/page.tsx
+  - [x] 9.9 Create lists page in src/app/lists/page.tsx
     - Display "Create New List" input and button at top
     - Fetch all custom lists from store
     - Render ListCard for each custom list
