@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* FunkyFlix theme (default) */
+  --color-background: #1a0b2e;
+  --color-background-secondary: #16213e;
+  --color-card-background: #2d1b4e;
+  --color-primary: #ff006e;
+  --color-secondary: #00f5ff;
+  --color-accent: #fb5607;
+  --color-text: #f8f9fa;
+  --color-text-secondary: #adb5bd;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+/* Custom utilities */
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+/* Soft glow effect */
+.soft-glow {
+  box-shadow: 0 0 20px rgba(255, 0, 110, 0.3);
+}
+
+.soft-glow:hover {
+  box-shadow: 0 0 30px rgba(255, 0, 110, 0.5);
+}
+
+/* Gradient backgrounds */
+.gradient-funky {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+}
+
+.gradient-sunset {
+  background: linear-gradient(135deg, #ff9e00, #ff006e);
+}
